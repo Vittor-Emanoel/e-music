@@ -1,0 +1,28 @@
+{
+  "name": "e-music",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run next\" \"npm run electron\"",
+    "electron": "electron ./electron/main.js ",
+    "next": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "concurrently": "^8.2.1",
+    "electron": "^26.2.2",
+    "electron-builder": "^24.6.4",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "wait-on": "^7.0.1"
+  }
+}
